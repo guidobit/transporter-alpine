@@ -11,4 +11,4 @@ rm -rf /var/cache/apk/*
 RUN curl -L https://github.com/compose/transporter/releases/download/v${TRANSPORTER_VERSION}/${TRANSPORTER_TAG} > /usr/local/bin/transporter && \
   chmod +x /usr/local/bin/transporter
 
-ENTRYPOINT [ "transporter" ]
+ENTRYPOINT [ "/bin/sh" ]
